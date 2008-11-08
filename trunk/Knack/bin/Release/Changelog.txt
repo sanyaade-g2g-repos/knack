@@ -1,0 +1,44 @@
+
+*** v.0.6. ()
+- new: Released as Open Source (GPL v.3)
+- new: Tablet sound input (requires a tablet with wintab32 driver, or a tablet-pc)
+
+*** v.0.5.1869.34652 (12 february 2005)
+- new: MidiIn blocks now have a DeviceID property
+- new: Multiple selection and dragging
+- new: CTRL-Clic to add/remove from selection
+- change: Code cleaning and refactoring
+- change: Some graphics improvements (new arrows, selected blocks coloring)
+- change: Changed the installer icon
+- bugfix: Many scrolling and snap to grid bugs fixed
+
+*** v.0.4.1791.29380 (26 november 2004)
+- new: Warning window when giving two blocks the same Name
+- new: Settings file: settings.xml with general sound settings and DirectSound latency settings
+- new: Skinned blocks and block handles
+- new: Block icons
+- new: Snap to grid
+- new: Bezier links with colors and shadows
+- new: You can associate .knk files to Kanck or drag and drop a file on the application icon to open it
+- new: You can drag and drop a .knk file over the application window to open it
+- new: Delete key deletes all the selected blocks
+- new: Midi Filter Effect
+- new: NSIS Installer with .NET Framework detection, .knk file association and Uninstaller
+- new: Added an example file: TwoInstruments.knk
+- change: Midi connection can be 1 to MANY, before it was only 1 to 1
+- change: Optimized wave functions with no clipping when changing frequency
+- change: Optimized, a lot faster operators
+- change: Completely rewritten Delay effect, with variable period and feedback
+- bugfix: Instrument blocks were not initializing correctly the sound data in some cases
+- bugfix: Wave oscillators with frequency lower then 9 Hz were not working
+
+*** v.0.3.1760.25800 (26 october 2004)
+- new: Added the main menu
+- new: Added the main toolbar
+- new: File loading and saving using an XML based file format (.knk files)
+- new: Added the about box
+- new: Added an example file: Example.knk
+- new: Added this Changelog.txt
+- change: Many improvements under the hood
+
+*** previous versions don't have a changelog
