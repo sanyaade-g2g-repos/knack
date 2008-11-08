@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Settings>
+	<!-- Reload Knack to apply these settings -->
+	<Output>
+		<Sound>
+			<General>
+				<!-- Only 16 bit 2 channels is supported -->
+				<SamplesPerSecond>44100</SamplesPerSecond>
+				<BitsPerSample>16</BitsPerSample>
+				<Channels>2</Channels>
+			</General>
+			<DirectSound>
+				<!-- Tweak these settings to get lower latency -->
+				<BufferSamples>400</BufferSamples>
+				<Buffers>10</Buffers>
+				<ThreadSleepTime>1</ThreadSleepTime>
+			</DirectSound>
+		</Sound>
+	</Output>
+</Settings>

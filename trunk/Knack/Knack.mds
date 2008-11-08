@@ -1,0 +1,16 @@
+<Combine name="Knack" fileversion="2.0">
+  <Configurations active="Debug">
+    <Configuration name="Debug" ctype="CombineConfiguration">
+      <Entry build="True" name="Knack" configuration="Debug" />
+    </Configuration>
+    <Configuration name="Release" ctype="CombineConfiguration">
+      <Entry build="True" name="Knack" configuration="Debug" />
+    </Configuration>
+  </Configurations>
+  <StartMode startupentry="Knack" single="True">
+    <Execute type="None" entry="Knack" />
+  </StartMode>
+  <Entries>
+    <Entry filename="./Knack.mdp" />
+  </Entries>
+</Combine>

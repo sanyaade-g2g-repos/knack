@@ -1,0 +1,1159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FxCopProject Version="1.3" Name="Knack">
+ <ProjectOptions>
+  <SharedProject>False</SharedProject>
+  <Stylesheet Apply="False">c:\programmi\microsoft fxcop 1.30\Xml\FxCopReport.Xsl</Stylesheet>
+  <SaveMessages>
+   <Project Status="Active, Excluded" NewOnly="False" />
+   <Report Status="Active" NewOnly="False" />
+  </SaveMessages>
+  <ProjectFile Compress="True" DefaultTargetCheck="True" DefaultRuleCheck="True" SaveByRuleGroup="" Deterministic="False" />
+  <PermitAnalysis>True</PermitAnalysis>
+  <SourceLookup>True</SourceLookup>
+  <AnalysisExceptionsThreshold>100</AnalysisExceptionsThreshold>
+  <RuleExceptionsThreshold>10</RuleExceptionsThreshold>
+  <Spelling Locale="en" />
+ </ProjectOptions>
+ <Targets>
+  <AssemblyReferenceDirectories>
+   <Directory>C:\Documents and Settings\Riccardo\Documenti\Sorgenti\Csharp\Knack\bin\Release\</Directory>
+  </AssemblyReferenceDirectories>
+  <Target Name="C:\Documents and Settings\Riccardo\Documenti\Sorgenti\Csharp\Knack\bin\Debug\Knack.exe" Analyze="True" AnalyzeAllChildren="True" />
+ </Targets>
+ <Rules>
+  <RuleFiles>
+   <RuleFile Name="$(FxCopDir)\Rules\DesignRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\PerformanceRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\NamingRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\SecurityRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\UsageRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\ComRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\GlobalizationRules.dll" Enabled="True" AllRulesEnabled="True" />
+  </RuleFiles>
+  <Groups />
+  <Settings />
+ </Rules>
+ <FxCopReport Version="1.3" LastAnalysis="2004-10-05 22:28:19Z">
+  <Targets>
+   <Target Name="C:\Documents and Settings\Riccardo\Documenti\Sorgenti\Csharp\Knack\bin\Debug\Knack.exe">
+    <Messages>
+     <Message Status="Active" Created="2004-10-04 21:06:11Z">
+      <Rule TypeName="AssembliesAreMarkedClsCompliant" />
+      <Issues>
+       <Issue Certainty="99" Level="Error">
+        <Resolution>
+         <Data>
+          <Id>AttrFalse</Id>
+          <Items>
+           <Item>Knack</Item>
+          </Items>
+         </Data>
+        </Resolution>
+       </Issue>
+      </Issues>
+     </Message>
+     <Message Status="Active" Created="2004-10-04 21:06:11Z">
+      <Rule TypeName="AssembliesHavePermissionRequests" />
+      <Issues>
+       <Issue Certainty="99" Level="CriticalError">
+        <Resolution>
+         <Data>
+          <Items>
+           <Item>Knack</Item>
+          </Items>
+         </Data>
+        </Resolution>
+       </Issue>
+      </Issues>
+     </Message>
+    </Messages>
+    <Modules>
+     <Module Name="knack.exe">
+      <Namespaces>
+       <Namespace Name="H3.Sound.Wave">
+        <Classes>
+         <Class Name="SoundOut">
+          <Methods>
+           <Method Name="Dispose():System.Void">
+            <Messages>
+             <Message Status="Active" Created="2004-10-04 22:11:55Z">
+              <Rule TypeName="ConsiderCallingDataMembersDisposeMethod" />
+              <Issues>
+               <Issue Certainty="75" Level="Warning">
+                <SourceCode Path="c:\Documents and Settings\Riccardo\Documenti\Sorgenti\Csharp\Knack\Sound" File="SoundOut.cs" Line="90" />
+                <Resolution>
+                 <Data>
+                  <Items>
+                   <Item>H3.Sound.Wave.SoundOut</Item>
+                   <Item>soundBufferDescription</Item>
+                   <Item>Microsoft.DirectX.DirectSound.BufferDescription</Item>
+                  </Items>
+                 </Data>
+                </Resolution>
+               </Issue>
+               <Issue Certainty="75" Level="Warning">
+                <SourceCode Path="c:\Documents and Settings\Riccardo\Documenti\Sorgenti\Csharp\Knack\Sound" File="SoundOut.cs" Line="90" />
+                <Resolution>
+                 <Data>
+                  <Items>
+                   <Item>H3.Sound.Wave.SoundOut</Item>
+                   <Item>fs</Item>
+                   <Item>System.IO.FileStream</Item>
+                  </Items>
+                 </Data>
+                </Resolution>
+               </Issue>
+               <Issue Certainty="75" Level="Warning">
+                <SourceCode Path="c:\Documents and Settings\Riccardo\Documenti\Sorgenti\Csharp\Knack\Sound" File="SoundOut.cs" Line="90" />
+                <Resolution>
+                 <Data>
+                  <Items>
+                   <Item>H3.Sound.Wave.SoundOut</Item>
+                   <Item>soundDevice</Item>
+                   <Item>Microsoft.DirectX.DirectSound.Device</Item>
+                  </Items>
+                 </Data>
+                </Resolution>
+               </Issue>
+               <Issue Certainty="75" Level="Warning">
+                <SourceCode Path="c:\Documents and Settings\Riccardo\Documenti\Sorgenti\Csharp\Knack\Sound" File="SoundOut.cs" Line="90" />
+                <Resolution>
+                 <Data>
+                  <Items>
+                   <Item>H3.Sound.Wave.SoundOut</Item>
+                   <Item>w</Item>
+                   <Item>System.IO.BinaryWriter</Item>
+                  </Items>
+                 </Data>
+                </Resolution>
+               </Issue>
+               <Issue Certainty="75" Level="Warning">
+                <SourceCode Path="c:\Documents and Settings\Riccardo\Documenti\Sorgenti\Csharp\Knack\Sound" File="SoundOut.cs" Line="90" />
+                <Resolution>
+                 <Data>
+                  <Items>
+                   <Item>H3.Sound.Wave.SoundOut</Item>
+                   <Item>soundBuffer</Item>
+                   <Item>Microsoft.DirectX.DirectSound.SecondaryBuffer</Item>
+                  </Items>
+                 </Data>
+                </Resolution>
+               </Issue>
+              </Issues>
+              <Notes>
+               <User Name="riccardo">
+                <Note ID="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Method>
+          </Methods>
+         </Class>
+        </Classes>
+       </Namespace>
+       <Namespace Name="H3.Sound">
+        <Interfaces>
+         <Interface Name="ISoundRender">
+          <Properties>
+           <Property Name="SoundInputs">
+            <Messages>
+             <Message Status="Active" Created="2004-10-05 19:42:28Z">
+              <Rule TypeName="PropertiesReturningCollectionsShouldBeReadOnly" />
+              <Issues>
+               <Issue Certainty="75" Level="Warning">
+                <Resolution>
+                 <Data>
+                  <Items>
+                   <Item>SoundInputs</Item>
+                  </Items>
+                 </Data>
+                </Resolution>
+               </Issue>
+              </Issues>
+             </Message>
+             <Message Status="Active" Created="2004-10-05 19:42:28Z">
+              <Rule TypeName="PropertiesShouldNotReturnArrays" />
+              <Issues>
+               <Issue Certainty="50" Level="Warning">
+                <Resolution>
+                 <Data>
+                  <Items>
+                   <Item>SoundInputs</Item>
+                  </Items>
+                 </Data>
+                </Resolution>
+               </Issue>
+              </Issues>
+             </Message>
+            </Messages>
+           </Property>
+          </Properties>
+         </Interface>
+        </Interfaces>
+        <Classes>
+         <Class Name="WaveSoundRender">
+          <Fields>
+           <Field Name="pos">
+            <Messages>
+             <Message Status="Active" Created="2004-10-05 19:42:28Z">
+              <Rule TypeName="TypesDoNotHavePublicInstanceFields" />
+              <Issues>
+               <Issue Certainty="90" Level="Error">
+                <Resolution>
+                 <Data>
+                  <Items>
+                   <Item>pos</Item>
+                  </Items>
+                 </Data>
+                </Resolution>
+               </Issue>
+              </Issues>
+             </Message>
+            </Messages>
+           </Field>
+           <Field Name="samplesPerSecond">
+            <Messages>
+             <Message Status="Active" Created="2004-10-05 19:42:28Z">
+              <Rule TypeName="TypesDoNotHavePublicInstanceFields" />
+              <Issues>
+               <Issue Certainty="90" Level="Error">
+                <Resolution>
+                 <Data>
+                  <Items>
+                   <Item>samplesPerSecond</Item>
+                  </Items>
+                 </Data>
+                </Resolution>
+               </Issue>
+              </Issues>
+             </Message>
+            </Messages>
+           </Field>
+           <Field Name="freq">
+            <Messages>
+             <Message Status="Active" Created="2004-10-05 19:42:28Z">
+              <Rule TypeName="TypesDoNotHavePublicInstanceFields" />
+              <Issues>
+               <Issue Certainty="90" Level="Error">
+                <Resolution>
+                 <Data>
+                  <Items>
+                   <Item>freq</Item>
+                  </Items>
+                 </Data>
+                </Resolution>
+               </Issue>
+              </Issues>
+             </Message>
+            </Messages>
+           </Field>
+          </Fields>
+         </Class>
+         <Class Name="RandomMidiRender">
+          <Events>
+           <Event Name="OnMidiMessage">
+            <Messages>
+             <Message Status="Active" Created="2004-10-05 19:42:28Z">
+              <Rule TypeName="EventSecondParametersHaveNameE" />
+              <Issues>
+               <Issue Certainty="99" Level="Error">
+                <Resolution>
+                 <Data>
+                  <Items>
+                   <Item>MidiMessageHandler</Item>
+                  </Items>
+                 </Data>
+                </Resolution>
+               </Issue>
+              </Issues>
+             </Message>
+             <Message Status="Active" Created="2004-10-05 19:42:28Z">
+              <Rule TypeName="EventHandlerNamesHaveEventHandlerSuffix" />
+              <Issues>
+               <Issue Certainty="95" Level="Error">
+                <Resolution>
+                 <Data>
+                  <Items>
+                   <Item>MidiMessageHandler</Item>
+                  </Items>
+                 </Data>
+                </Resolution>
+               </Issue>
+              </Issues>
+             </Message>
+             <Message Status="Active" Created="2004-10-05 19:42:28Z">
+              <Rule TypeName="EventFirstParametersAreTypeObject" />
+              <Issues>
+               <Issue Certainty="99" Level="Error">
+                <Resolution>
+                 <Data>
+                  <Items>
+                   <Item>MidiMessageHandler</Item>
+                  </Items>
+                 </Data>
+                </Resolution>
+               </Issue>
+              </Issues>
+             </Message>
+             <Message Status="Active" Created="2004-10-05 19:42:28Z">
+              <Rule TypeName="EventSecondParametersAreEventArgsType" />
+              <Issues>
+               <Issue Certainty="99" Level="Error">
+                <Resolution>
+                 <Data>
+                  <Items>
+                   <Item>MidiMessageHandler</Item>
+                  </Items>
+                 </Data>
+                </Resolution>
+               </Issue>
+              </Issues>
+             </Message>
+             <Message Status="Active" Created="2004-10-05 19:42:28Z">
+              <Rule TypeName="EventsHaveTwoParameters" />
+              <Issues>
+               <Issue Certainty="99" Level="Error">
+                <Resolution>
+                 <Data>
+                  <Items>
+                   <Item>MidiMessageHandler</Item>
+                  </Items>
+                 </Data>
+                </Resolution>
+               </Issue>
+              </Issues>
+             </Message>
+             <Message Status="Active" Created="2004-10-05 19:42:28Z">
+              <Rule TypeName="EventFirstParametersHaveNameSender" />
+              <Issues>
+               <Issue Certainty="99" Level="Error">
+                <Resolution>
+                 <Data>
+                  <Items>
+                   <Item>MidiMessageHandler</Item>
+                  </Items>
+                 </Data>
+                </Resolution>
+               </Issue>
+              </Issues>
+             </Message>
+            </Messages>
+           </Event>
+          </Events>
+         </Class>
+         <Class Name="SoundRender">
+          <Messages>
+           <Message Status="Active" Created="2004-10-05 19:42:28Z">
+            <Rule TypeName="MemberNamesDifferByMoreThanCase" />
+            <Issues>
+             <Issue Certainty="99" Level="Error">
+              <Resolution>
+               <Data>
+                <Items>
+                 <Item>'playing' and 'Playing'</Item>
+                </Items>
+               </Data>
+              </Resolution>
+             </Issue>
+            </Issues>
+           </Message>
+          </Messages>
+          <Fields>
+           <Field Name="dynamic">
+            <Messages>
+             <Message Status="Active" Created="2004-10-05 19:42:28Z">
+              <Rule TypeName="TypesDoNotHavePublicInstanceFields" />
+              <Issues>
+               <Issue Certainty="90" Level="Error">
+                <Resolution>
+                 <Data>
+                  <Items>
+                   <Item>dynamic</Item>
+                  </Items>
+                 </Data>
+                </Resolution>
+               </Issue>
+              </Issues>
+             </Message>
+            </Messages>
+           </Field>
+           <Field Name="playing">
+            <Messages>
+             <Message Status="Active" Created="2004-10-05 19:42:28Z">
+              <Rule TypeName="TypesDoNotHavePublicInstanceFields" />
+              <Issues>
+               <Issue Certainty="90" Level="Error">
+                <Resolution>
+                 <Data>
+                  <Items>
+                   <Item>playing</Item>
+                  </Items>
+                 </Data>
+                </Resolution>
+               </Issue>
+              </Issues>
+             </Message>
+            </Messages>
+           </Field>
+          </Fields>
+         </Class>
+         <Class Name="MidiInRender">
+          <Events>
+           <Event Name="OnMidiMessage">
+            <Messages>
+             <Message Status="Active" Created="2004-10-05 19:42:28Z">
+              <Rule TypeName="EventSecondParametersHaveNameE" />
+              <Issues>
+               <Issue Certainty="99" Level="Error">
+                <Resolution>
+                 <Data>
+                  <Items>
+                   <Item>MidiMessageHandler</Item>
+                  </Items>
+                 </Data>
+                </Resolution>
+               </Issue>
+              </Issues>
+             </Message>
+             <Message Status="Active" Created="2004-10-05 19:42:28Z">
+              <Rule TypeName="EventHandlerNamesHaveEventHandlerSuffix" />
+              <Issues>
+               <Issue Certainty="95" Level="Error">
+                <Resolution>
+                 <Data>
+                  <Items>
+                   <Item>MidiMessageHandler</Item>
+                  </Items>
+                 </Data>
+                </Resolution>
+               </Issue>
+              </Issues>
+             </Message>
+             <Message Status="Active" Created="2004-10-05 19:42:28Z">
+              <Rule TypeName="EventFirstParametersAreTypeObject" />
+              <Issues>
+               <Issue Certainty="99" Level="Error">
+                <Resolution>
+                 <Data>
+                  <Items>
+                   <Item>MidiMessageHandler</Item>
+                  </Items>
+                 </Data>
+                </Resolution>
+               </Issue>
+              </Issues>
+             </Message>
+             <Message Status="Active" Created="2004-10-05 19:42:28Z">
+              <Rule TypeName="EventSecondParametersAreEventArgsType" />
+              <Issues>
+               <Issue Certainty="99" Level="Error">
+                <Resolution>
+                 <Data>
+                  <Items>
+                   <Item>MidiMessageHandler</Item>
+                  </Items>
+                 </Data>
+                </Resolution>
+               </Issue>
+              </Issues>
+             </Message>
+             <Message Status="Active" Created="2004-10-05 19:42:28Z">
+              <Rule TypeName="EventsHaveTwoParameters" />
+              <Issues>
+               <Issue Certainty="99" Level="Error">
+                <Resolution>
+                 <Data>
+                  <Items>
+                   <Item>MidiMessageHandler</Item>
+                  </Items>
+                 </Data>
+                </Resolution>
+               </Issue>
+              </Issues>
+             </Message>
+             <Message Status="Active" Created="2004-10-05 19:42:28Z">
+              <Rule TypeName="EventFirstParametersHaveNameSender" />
+              <Issues>
+               <Issue Certainty="99" Level="Error">
+                <Resolution>
+                 <Data>
+                  <Items>
+                   <Item>MidiMessageHandler</Item>
+                  </Items>
+                 </Data>
+                </Resolution>
+               </Issue>
+              </Issues>
+             </Message>
+            </Messages>
+           </Event>
+          </Events>
+         </Class>
+         <Class Name="SoundBlock">
+          <Constructors>
+           <Constructor Name=".ctor(System.Int32,System.Int32)">
+            <Messages>
+             <Message ID="System.Int32.ToString" Status="Active" Created="2004-10-04 22:11:55Z">
+              <Rule TypeName="IFormatProviderShouldBePassed" />
+              <Issues>
+               <Issue Certainty="95" Level="Error">
+                <SourceCode Path="c:\Documents and Settings\Riccardo\Documenti\Sorgenti\Csharp\Knack\Sound" File="SoundBlock.cs" Line="33" />
+                <Resolution>
+                 <Data>
+                  <Items>
+                   <Item>Int32.ToString()</Item>
+                   <Item>Int32.ToString(IFormatProvider provider)</Item>
+                  </Items>
+                 </Data>
+                </Resolution>
+               </Issue>
+              </Issues>
+             </Message>
+            </Messages>
+           </Constructor>
+          </Constructors>
+          <Properties>
+           <Property Name="SoundInputs">
+            <Messages>
+             <Message Status="Active" Created="2004-10-04 22:11:55Z">
+              <Rule TypeName="PropertiesReturningCollectionsShouldBeReadOnly" />
+              <Issues>
+               <Issue Certainty="75" Level="Warning">
+                <SourceCode Path="c:\Documents and Settings\Riccardo\Documenti\Sorgenti\Csharp\Knack\Sound" File="SoundBlock.cs" Line="59" />
+                <Resolution>
+                 <Data>
+                  <Items>
+                   <Item>SoundInputs</Item>
+                  </Items>
+                 </Data>
+                </Resolution>
+               </Issue>
+              </Issues>
+             </Message>
+             <Message Status="Active" Created="2004-10-04 22:11:55Z">
+              <Rule TypeName="PropertiesShouldNotReturnArrays" />
+              <Issues>
+               <Issue Certainty="50" Level="Warning">
+                <SourceCode Path="c:\Documents and Settings\Riccardo\Documenti\Sorgenti\Csharp\Knack\Sound" File="SoundBlock.cs" Line="59" />
+                <Resolution>
+                 <Data>
+                  <Items>
+                   <Item>SoundInputs</Item>
+                  </Items>
+                 </Data>
+                </Resolution>
+               </Issue>
+              </Issues>
+             </Message>
+            </Messages>
+           </Property>
+           <Property Name="MidiInputs">
+            <Messages>
+             <Message Status="Active" Created="2004-10-04 22:11:55Z">
+              <Rule TypeName="PropertiesReturningCollectionsShouldBeReadOnly" />
+              <Issues>
+               <Issue Certainty="75" Level="Warning">
+                <SourceCode Path="c:\Documents and Settings\Riccardo\Documenti\Sorgenti\Csharp\Knack\Sound" File="SoundBlock.cs" Line="65" />
+                <Resolution>
+                 <Data>
+                  <Items>
+                   <Item>MidiInputs</Item>
+                  </Items>
+                 </Data>
+                </Resolution>
+               </Issue>
+              </Issues>
+             </Message>
+             <Message Status="Active" Created="2004-10-04 22:11:55Z">
+              <Rule TypeName="PropertiesShouldNotReturnArrays" />
+              <Issues>
+               <Issue Certainty="50" Level="Warning">
+                <SourceCode Path="c:\Documents and Settings\Riccardo\Documenti\Sorgenti\Csharp\Knack\Sound" File="SoundBlock.cs" Line="65" />
+                <Resolution>
+                 <Data>
+                  <Items>
+                   <Item>MidiInputs</Item>
+                  </Items>
+                 </Data>
+                </Resolution>
+               </Issue>
+              </Issues>
+             </Message>
+            </Messages>
+           </Property>
+          </Properties>
+         </Class>
+         <Class Name="KnackFile">
+          <Methods>
+           <Method Name="Save(System.String):System.Void">
+            <Messages>
+             <Message ID="System.Int32.ToString" Status="Active" Created="2004-10-04 22:17:24Z">
+              <Rule TypeName="IFormatProviderShouldBePassed" />
+              <Issues>
+               <Issue Certainty="95" Level="Error">
+                <SourceCode Path="c:\Documents and Settings\Riccardo\Documenti\Sorgenti\Csharp\Knack\Sound" File="KnackFile.cs" Line="101" />
+                <Resolution>
+                 <Data>
+                  <Items>
+                   <Item>Int32.ToString()</Item>
+                   <Item>Int32.ToString(IFormatProvider provider)</Item>
+                  </Items>
+                 </Data>
+                </Resolution>
+               </Issue>
+               <Issue Certainty="95" Level="Error">
+                <SourceCode Path="c:\Documents and Settings\Riccardo\Documenti\Sorgenti\Csharp\Knack\Sound" File="KnackFile.cs" Line="105" />
+                <Resolution>
+                 <Data>
+                  <Items>
+                   <Item>Int32.ToString()</Item>
+                   <Item>Int32.ToString(IFormatProvider provider)</Item>
+                  </Items>
+                 </Data>
+                </Resolution>
+               </Issue>
+               <Issue Certainty="95" Level="Error">
+                <SourceCode Path="c:\Documents and Settings\Riccardo\Documenti\Sorgenti\Csharp\Knack\Sound" File="KnackFile.cs" Line="120" />
+                <Resolution>
+                 <Data>
+                  <Items>
+                   <Item>Int32.ToString()</Item>
+                   <Item>Int32.ToString(IFormatProvider provider)</Item>
+                  </Items>
+                 </Data>
+                </Resolution>
+               </Issue>
+               <Issue Certainty="95" Level="Error">
+                <SourceCode Path="c:\Documents and Settings\Riccardo\Documenti\Sorgenti\Csharp\Knack\Sound" File="KnackFile.cs" Line="143" />
+                <Resolution>
+                 <Data>
+                  <Items>
+                   <Item>Int32.ToString()</Item>
+                   <Item>Int32.ToString(IFormatProvider provider)</Item>
+                  </Items>
+                 </Data>
+                </Resolution>
+               </Issue>
+              </Issues>
+             </Message>
+             <Message Status="Active" Created="2004-10-04 22:17:24Z">
+              <Rule TypeName="ExceptionAndSystemExceptionTypesAreNotCaught" />
+              <Issues>
+               <Issue Certainty="95" Level="CriticalError">
+                <SourceCode Path="c:\Documents and Settings\Riccardo\Documenti\Sorgenti\Csharp\Knack\Sound" File="KnackFile.cs" Line="177" />
+                <Resolution>
+                 <Data>
+                  <Items>
+                   <Item>Save</Item>
+                   <Item>Exception</Item>
+                  </Items>
+                 </Data>
+                </Resolution>
+               </Issue>
+              </Issues>
+             </Message>
+            </Messages>
+           </Method>
+          </Methods>
+         </Class>
+        </Classes>
+       </Namespace>
+       <Namespace Name="H3.Sound.Midi">
+        <Interfaces>
+         <Interface Name="IMidiRender">
+          <Events>
+           <Event Name="OnMidiMessage">
+            <Messages>
+             <Message Status="Active" Created="2004-10-04 22:11:55Z">
+              <Rule TypeName="EventSecondParametersHaveNameE" />
+              <Issues>
+               <Issue Certainty="99" Level="Error">
+                <Resolution>
+                 <Data>
+                  <Items>
+                   <Item>MidiMessageHandler</Item>
+                  </Items>
+                 </Data>
+                </Resolution>
+               </Issue>
+              </Issues>
+             </Message>
+             <Message Status="Active" Created="2004-10-04 22:11:55Z">
+              <Rule TypeName="EventHandlerNamesHaveEventHandlerSuffix" />
+              <Issues>
+               <Issue Certainty="95" Level="Error">
+                <Resolution>
+                 <Data>
+                  <Items>
+                   <Item>MidiMessageHandler</Item>
+                  </Items>
+                 </Data>
+                </Resolution>
+               </Issue>
+              </Issues>
+             </Message>
+             <Message Status="Active" Created="2004-10-04 22:11:55Z">
+              <Rule TypeName="EventFirstParametersAreTypeObject" />
+              <Issues>
+               <Issue Certainty="99" Level="Error">
+                <Resolution>
+                 <Data>
+                  <Items>
+                   <Item>MidiMessageHandler</Item>
+                  </Items>
+                 </Data>
+                </Resolution>
+               </Issue>
+              </Issues>
+             </Message>
+             <Message Status="Active" Created="2004-10-04 22:11:55Z">
+              <Rule TypeName="EventSecondParametersAreEventArgsType" />
+              <Issues>
+               <Issue Certainty="99" Level="Error">
+                <Resolution>
+                 <Data>
+                  <Items>
+                   <Item>MidiMessageHandler</Item>
+                  </Items>
+                 </Data>
+                </Resolution>
+               </Issue>
+              </Issues>
+             </Message>
+             <Message Status="Active" Created="2004-10-04 22:11:55Z">
+              <Rule TypeName="EventsHaveTwoParameters" />
+              <Issues>
+               <Issue Certainty="99" Level="Error">
+                <Resolution>
+                 <Data>
+                  <Items>
+                   <Item>MidiMessageHandler</Item>
+                  </Items>
+                 </Data>
+                </Resolution>
+               </Issue>
+              </Issues>
+             </Message>
+             <Message Status="Active" Created="2004-10-04 22:11:55Z">
+              <Rule TypeName="EventFirstParametersHaveNameSender" />
+              <Issues>
+               <Issue Certainty="99" Level="Error">
+                <Resolution>
+                 <Data>
+                  <Items>
+                   <Item>MidiMessageHandler</Item>
+                  </Items>
+                 </Data>
+                </Resolution>
+               </Issue>
+              </Issues>
+             </Message>
+            </Messages>
+           </Event>
+          </Events>
+         </Interface>
+         <Interface Name="IMidiHandler">
+          <Properties>
+           <Property Name="MidiInputs">
+            <Messages>
+             <Message Status="Active" Created="2004-10-04 22:11:55Z">
+              <Rule TypeName="PropertiesReturningCollectionsShouldBeReadOnly" />
+              <Issues>
+               <Issue Certainty="75" Level="Warning">
+                <Resolution>
+                 <Data>
+                  <Items>
+                   <Item>MidiInputs</Item>
+                  </Items>
+                 </Data>
+                </Resolution>
+               </Issue>
+              </Issues>
+             </Message>
+             <Message Status="Active" Created="2004-10-04 22:11:55Z">
+              <Rule TypeName="PropertiesShouldNotReturnArrays" />
+              <Issues>
+               <Issue Certainty="50" Level="Warning">
+                <Resolution>
+                 <Data>
+                  <Items>
+                   <Item>MidiInputs</Item>
+                  </Items>
+                 </Data>
+                </Resolution>
+               </Issue>
+              </Issues>
+             </Message>
+            </Messages>
+           </Property>
+          </Properties>
+         </Interface>
+        </Interfaces>
+        <Classes>
+         <Class Name="NullMidiRender">
+          <Events>
+           <Event Name="OnMidiMessage">
+            <Messages>
+             <Message Status="Active" Created="2004-10-04 22:11:55Z">
+              <Rule TypeName="EventSecondParametersHaveNameE" />
+              <Issues>
+               <Issue Certainty="99" Level="Error">
+                <Resolution>
+                 <Data>
+                  <Items>
+                   <Item>MidiMessageHandler</Item>
+                  </Items>
+                 </Data>
+                </Resolution>
+               </Issue>
+              </Issues>
+             </Message>
+             <Message Status="Active" Created="2004-10-04 22:11:55Z">
+              <Rule TypeName="EventHandlerNamesHaveEventHandlerSuffix" />
+              <Issues>
+               <Issue Certainty="95" Level="Error">
+                <Resolution>
+                 <Data>
+                  <Items>
+                   <Item>MidiMessageHandler</Item>
+                  </Items>
+                 </Data>
+                </Resolution>
+               </Issue>
+              </Issues>
+             </Message>
+             <Message Status="Active" Created="2004-10-04 22:11:55Z">
+              <Rule TypeName="EventFirstParametersAreTypeObject" />
+              <Issues>
+               <Issue Certainty="99" Level="Error">
+                <Resolution>
+                 <Data>
+                  <Items>
+                   <Item>MidiMessageHandler</Item>
+                  </Items>
+                 </Data>
+                </Resolution>
+               </Issue>
+              </Issues>
+             </Message>
+             <Message Status="Active" Created="2004-10-04 22:11:55Z">
+              <Rule TypeName="EventSecondParametersAreEventArgsType" />
+              <Issues>
+               <Issue Certainty="99" Level="Error">
+                <Resolution>
+                 <Data>
+                  <Items>
+                   <Item>MidiMessageHandler</Item>
+                  </Items>
+                 </Data>
+                </Resolution>
+               </Issue>
+              </Issues>
+             </Message>
+             <Message Status="Active" Created="2004-10-04 22:11:55Z">
+              <Rule TypeName="EventsHaveTwoParameters" />
+              <Issues>
+               <Issue Certainty="99" Level="Error">
+                <Resolution>
+                 <Data>
+                  <Items>
+                   <Item>MidiMessageHandler</Item>
+                  </Items>
+                 </Data>
+                </Resolution>
+               </Issue>
+              </Issues>
+             </Message>
+             <Message Status="Active" Created="2004-10-04 22:11:55Z">
+              <Rule TypeName="EventFirstParametersHaveNameSender" />
+              <Issues>
+               <Issue Certainty="99" Level="Error">
+                <Resolution>
+                 <Data>
+                  <Items>
+                   <Item>MidiMessageHandler</Item>
+                  </Items>
+                 </Data>
+                </Resolution>
+               </Issue>
+              </Issues>
+             </Message>
+            </Messages>
+           </Event>
+          </Events>
+         </Class>
+         <Class Name="MidiIn">
+          <Events>
+           <Event Name="OnMidiMessage">
+            <Messages>
+             <Message Status="Active" Created="2004-10-04 22:11:55Z">
+              <Rule TypeName="EventSecondParametersHaveNameE" />
+              <Issues>
+               <Issue Certainty="99" Level="Error">
+                <Resolution>
+                 <Data>
+                  <Items>
+                   <Item>MidiMessageHandler</Item>
+                  </Items>
+                 </Data>
+                </Resolution>
+               </Issue>
+              </Issues>
+             </Message>
+             <Message Status="Active" Created="2004-10-04 22:11:55Z">
+              <Rule TypeName="EventHandlerNamesHaveEventHandlerSuffix" />
+              <Issues>
+               <Issue Certainty="95" Level="Error">
+                <Resolution>
+                 <Data>
+                  <Items>
+                   <Item>MidiMessageHandler</Item>
+                  </Items>
+                 </Data>
+                </Resolution>
+               </Issue>
+              </Issues>
+             </Message>
+             <Message Status="Active" Created="2004-10-04 22:11:55Z">
+              <Rule TypeName="EventFirstParametersAreTypeObject" />
+              <Issues>
+               <Issue Certainty="99" Level="Error">
+                <Resolution>
+                 <Data>
+                  <Items>
+                   <Item>MidiMessageHandler</Item>
+                  </Items>
+                 </Data>
+                </Resolution>
+               </Issue>
+              </Issues>
+             </Message>
+             <Message Status="Active" Created="2004-10-04 22:11:55Z">
+              <Rule TypeName="EventSecondParametersAreEventArgsType" />
+              <Issues>
+               <Issue Certainty="99" Level="Error">
+                <Resolution>
+                 <Data>
+                  <Items>
+                   <Item>MidiMessageHandler</Item>
+                  </Items>
+                 </Data>
+                </Resolution>
+               </Issue>
+              </Issues>
+             </Message>
+             <Message Status="Active" Created="2004-10-04 22:11:55Z">
+              <Rule TypeName="EventsHaveTwoParameters" />
+              <Issues>
+               <Issue Certainty="99" Level="Error">
+                <Resolution>
+                 <Data>
+                  <Items>
+                   <Item>MidiMessageHandler</Item>
+                  </Items>
+                 </Data>
+                </Resolution>
+               </Issue>
+              </Issues>
+             </Message>
+             <Message Status="Active" Created="2004-10-04 22:11:55Z">
+              <Rule TypeName="EventFirstParametersHaveNameSender" />
+              <Issues>
+               <Issue Certainty="99" Level="Error">
+                <Resolution>
+                 <Data>
+                  <Items>
+                   <Item>MidiMessageHandler</Item>
+                  </Items>
+                 </Data>
+                </Resolution>
+               </Issue>
+              </Issues>
+             </Message>
+            </Messages>
+           </Event>
+          </Events>
+         </Class>
+        </Classes>
+       </Namespace>
+      </Namespaces>
+     </Module>
+    </Modules>
+   </Target>
+  </Targets>
+  <Notes>
+   <User Name="riccardo">
+    <Note ID="0" Modified="2004-10-05 22:10:12Z">falso allarme</Note>
+   </User>
+  </Notes>
+  <Rules>
+   <Rule TypeName="AssembliesAreMarkedClsCompliant">
+    <Name>Assemblies are marked CLSCompliant</Name>
+    <Description>Assemblies should explicitly state their CLS compliance using the CLSCompliant attribute. An assembly without this attribute is not CLS-compliant.</Description>
+    <LongDescription>Assemblies, modules, and types can be CLS-compliant even if some parts of the assembly, module, or type are not CLS-compliant. The following rules apply: 1) If the element is marked CLSCompliant, any noncompliant members must have the CLSCompliant attribute present with its argument set to false. 2) A comparable CLS-compliant alternative member must be supplied for each member that is not CLS-compliant.</LongDescription>
+    <GroupOwner>MS FxCopDev</GroupOwner>
+    <DevOwner />
+    <Url>http://www.gotdotnet.com/team/fxcop/docs/rules/DesignRules/AssemblyClsCompliant.html</Url>
+    <Email>askfxcop@microsoft.com</Email>
+    <MessageLevel Certainty="99">Error</MessageLevel>
+    <File Name="DesignRules.dll" Version="1.30.0.0" />
+   </Rule>
+   <Rule TypeName="AssembliesHavePermissionRequests">
+    <Name>Assemblies specify permission requests</Name>
+    <Description>Permission requests prevent security exceptions from being thrown after code in an assembly has already begun executing. With permission requests, the assembly does not load if it has insufficient permissions. This rule will fire if you have specified a permission request incorrectly, or incompletely. If you have specified requests but FxCop reports a violation for this rule, use the PermView.exe tool to view the security permissions in the assembly. An unenforceable permission appears as an empty permission set.</Description>
+    <LongDescription>You should add attributes specifying what permissions your assembly will demand, might demand, and what permissions it does not want granted.  For example, the following attribute indicates that an assembly will, at minimum, require read access to the USERNAME environment variable: [assembly:EnvironmentPermissionAttribute(SecurityAction.RequestMinimum,
+Read="USERNAME")]. To specify permissions that the assembly might demand, use SecurityAction.RequestOptional. To specify permissions that the assembly must not be granted, use SecurityAction.RequestRefuse.</LongDescription>
+    <GroupOwner>MS FxCopDev</GroupOwner>
+    <DevOwner />
+    <Url>http://www.gotdotnet.com/team/fxcop/docs/rules/UsageRules/AssembliesPermissionRequests.html</Url>
+    <Email>askfxcop@microsoft.com</Email>
+    <MessageLevel Certainty="99">CriticalError</MessageLevel>
+    <File Name="UsageRules.dll" Version="1.30.0.0" />
+   </Rule>
+   <Rule TypeName="ConsiderCallingDataMembersDisposeMethod">
+    <Name>Consider calling the IDisposable.Dispose methods of data members</Name>
+    <Description>If a type which implements IDisposable has fields of a type that also implements IDisposable, the type's Dispose method should call the field's Dispose method if the type owns or allocates the objects stored in the fields.</Description>
+    <LongDescription />
+    <GroupOwner>MS FxCopDev</GroupOwner>
+    <DevOwner />
+    <Url>http://www.gotdotnet.com/team/fxcop/docs/rules/UsageRules/ConsiderCallingDataMembersDisposeMethod.html</Url>
+    <Email>askfxcop@microsoft.com</Email>
+    <MessageLevel Certainty="75">Warning</MessageLevel>
+    <File Name="UsageRules.dll" Version="1.30.0.0" />
+   </Rule>
+   <Rule TypeName="EventFirstParametersAreTypeObject">
+    <Name>The first parameter of an event is a System.Object type</Name>
+    <Description>By convention, .NET events have two parameters that specify the event sender and event data. Event handler signatures should follow this form: void MyEventHandler(object sender, EventArgs e).</Description>
+    <LongDescription>The sender parameter is always of type System.Object, even if it is possible to employ a more specific type. Events that do not provide event data should use the System.EventHandler delegate type.</LongDescription>
+    <GroupOwner>MS FxCopDev</GroupOwner>
+    <DevOwner />
+    <Url>http://www.gotdotnet.com/team/fxcop/docs/rules/DesignRules/EventFirstParmObject.html</Url>
+    <Email>askfxcop@microsoft.com</Email>
+    <MessageLevel Certainty="99">Error</MessageLevel>
+    <File Name="DesignRules.dll" Version="1.30.0.0" />
+   </Rule>
+   <Rule TypeName="EventFirstParametersHaveNameSender">
+    <Name>The first parameter of an event is named 'sender'</Name>
+    <Description>By convention, .NET events have two parameters that specify the event sender and event data, as in void MyEventHandler(object sender, EventArgs e). The sender parameter is always of type object, even if it is possible to employ a more specific type.</Description>
+    <LongDescription>Events that do not provide event data should use the System.EventHandler delegate type.</LongDescription>
+    <GroupOwner>MS FxCopDev</GroupOwner>
+    <DevOwner />
+    <Url>http://www.gotdotnet.com/team/fxcop/docs/rules/NamingRules/EventFirstParametersHaveNameSender.html</Url>
+    <Email>askfxcop@microsoft.com</Email>
+    <MessageLevel Certainty="99">Error</MessageLevel>
+    <File Name="NamingRules.dll" Version="1.30.0.0" />
+   </Rule>
+   <Rule TypeName="EventHandlerNamesHaveEventHandlerSuffix">
+    <Name>Event handler names have the 'EventHandler' suffix</Name>
+    <Description>An event handler type name should be suffixed with 'EventHandler', as in MouseEventHandler.</Description>
+    <LongDescription />
+    <GroupOwner>MS FxCopDev</GroupOwner>
+    <DevOwner />
+    <Url>http://www.gotdotnet.com/team/fxcop/docs/rules/NamingRules/EventHandlerNamesHaveEventHandlerSuffix.html</Url>
+    <Email>askfxcop@microsoft.com</Email>
+    <MessageLevel Certainty="95">Error</MessageLevel>
+    <File Name="NamingRules.dll" Version="1.30.0.0" />
+   </Rule>
+   <Rule TypeName="EventSecondParametersAreEventArgsType">
+    <Name>The second parameter of an event is a System.EventArgs type</Name>
+    <Description>By convention, .NET events have two parameters that specify the event sender and event data. Event handler signatures should follow this form: void MyEventHandler(object sender, EventArgs e).</Description>
+    <LongDescription>The 'e' parameter is always of type System.EventArgs. Events that do not provide event data should use the System.EventHandler delegate type.</LongDescription>
+    <GroupOwner>MS FxCopDev</GroupOwner>
+    <DevOwner />
+    <Url>http://www.gotdotnet.com/team/fxcop/docs/rules/DesignRules/EventSecondParmEventArgs.html</Url>
+    <Email>askfxcop@microsoft.com</Email>
+    <MessageLevel Certainty="99">Error</MessageLevel>
+    <File Name="DesignRules.dll" Version="1.30.0.0" />
+   </Rule>
+   <Rule TypeName="EventSecondParametersHaveNameE">
+    <Name>The second parameter of an event is named 'e'</Name>
+    <Description>By convention, .NET events have two parameters that specify the event sender and event data, as in void MyEventHandler(object sender, EventArgs e). The state associated with the event is encapsulated in an instance of an EventArgs, named 'e'.</Description>
+    <LongDescription>Events that do not provide event data should use the System.EventHandler delegate type.</LongDescription>
+    <GroupOwner>MS FxCopDev</GroupOwner>
+    <DevOwner />
+    <Url>http://www.gotdotnet.com/team/fxcop/docs/rules/NamingRules/EventSecondParametersHaveNameE.html</Url>
+    <Email>askfxcop@microsoft.com</Email>
+    <MessageLevel Certainty="99">Error</MessageLevel>
+    <File Name="NamingRules.dll" Version="1.30.0.0" />
+   </Rule>
+   <Rule TypeName="EventsHaveTwoParameters">
+    <Name>Events have two parameters</Name>
+    <Description>By convention, .NET events have two parameters that specify the event sender and event data. Event handler signatures should follow this form: void MyEventHandler(object sender, EventArgs e).</Description>
+    <LongDescription>Events that provide no event data should use the System.EventHandler delegate type.</LongDescription>
+    <GroupOwner>MS FxCopDev</GroupOwner>
+    <DevOwner />
+    <Url>http://www.gotdotnet.com/team/fxcop/docs/rules/DesignRules/EventsHaveTwoParameters.html</Url>
+    <Email>askfxcop@microsoft.com</Email>
+    <MessageLevel Certainty="99">Error</MessageLevel>
+    <File Name="DesignRules.dll" Version="1.30.0.0" />
+   </Rule>
+   <Rule TypeName="ExceptionAndSystemExceptionTypesAreNotCaught">
+    <Name>System.Exception and System.SystemException are not caught</Name>
+    <Description>You should not catch Exception or SystemException.</Description>
+    <LongDescription>Catching generic exception types can hide run-time problems from the library user, and can complicate debugging. You should catch only those exceptions that you can handle gracefully.</LongDescription>
+    <GroupOwner>MS FxCopDev</GroupOwner>
+    <DevOwner />
+    <Url>http://www.gotdotnet.com/team/fxcop/docs/rules/DesignRules/ExceptionAndSystemException.html</Url>
+    <Email>askfxcop@microsoft.com</Email>
+    <MessageLevel Certainty="95">CriticalError</MessageLevel>
+    <File Name="DesignRules.dll" Version="1.30.0.0" />
+   </Rule>
+   <Rule TypeName="IFormatProviderShouldBePassed">
+    <Name>IFormatProvider should be passed</Name>
+    <Description>If an overload exists that takes an IFormatProvider argument, it should always be called in favor of an overload that does not.</Description>
+    <LongDescription>Some methods in the common language runtime convert a value to or from a string representation and take a string parameter that contains one or more characters, called format specifiers, which indicate how the value is to be converted. If the meaning of the format specifier varies by culture, a formatting object supplies the actual characters used in the string representation. In scenarios where sorting and comparison behavior should never change between cultures, specify CultureInfo.InvariantCulture.</LongDescription>
+    <GroupOwner>MS FxCopDev</GroupOwner>
+    <DevOwner />
+    <Url>http://www.gotdotnet.com/team/fxcop/docs/rules/Globalization/IFormatProviderPassed.html</Url>
+    <Email>askfxcop@microsoft.com</Email>
+    <MessageLevel Certainty="95">Error</MessageLevel>
+    <File Name="GlobalizationRules.dll" Version="1.30.0.0" />
+   </Rule>
+   <Rule TypeName="MemberNamesDifferByMoreThanCase">
+    <Name>Member names differ by more than case</Name>
+    <Description>Do not use names that require case sensitivity for uniqueness.</Description>
+    <LongDescription />
+    <GroupOwner>MS FxCopDev</GroupOwner>
+    <DevOwner />
+    <Url>http://www.gotdotnet.com/team/fxcop/docs/rules/NamingRules/MemberNamesDifferByMoreThanCase.html</Url>
+    <Email>askfxcop@microsoft.com</Email>
+    <MessageLevel Certainty="99">Error</MessageLevel>
+    <File Name="NamingRules.dll" Version="1.30.0.0" />
+   </Rule>
+   <Rule TypeName="PropertiesReturningCollectionsShouldBeReadOnly">
+    <Name>Properties that return collections should be read-only</Name>
+    <Description>Properties that return collections should be read-only so that users cannot entirely replace the backing store. Users can still modify the contents of the collection by calling relevant methods on the collection.</Description>
+    <LongDescription>Note that the XmlSerializer class has special support for deserializing read-only collections. See the XmlSerializer overview for more information.</LongDescription>
+    <GroupOwner>MS FxCopDev</GroupOwner>
+    <DevOwner />
+    <Url>http://www.gotdotnet.com/team/fxcop/docs/rules/UsageRules/PropertiesCollectionsReadOnly.html</Url>
+    <Email>askfxcop@microsoft.com</Email>
+    <MessageLevel Certainty="75">Warning</MessageLevel>
+    <File Name="UsageRules.dll" Version="1.30.0.0" />
+   </Rule>
+   <Rule TypeName="PropertiesShouldNotReturnArrays">
+    <Name>Properties should not return arrays</Name>
+    <Description>Properties that return arrays are prone to code inefficiencies.</Description>
+    <LongDescription>Consider using a collection or making this a method. See the design guidelines for more information.</LongDescription>
+    <GroupOwner>MS FxCopDev</GroupOwner>
+    <DevOwner />
+    <Url>http://www.gotdotnet.com/team/fxcop/docs/rules/Performance/PropertyArray.html</Url>
+    <Email>askfxcop@microsoft.com</Email>
+    <MessageLevel Certainty="50">Warning</MessageLevel>
+    <File Name="PerformanceRules.dll" Version="1.30.0.0" />
+   </Rule>
+   <Rule TypeName="TypesDoNotHavePublicInstanceFields">
+    <Name>Types do not have externally visible instance fields</Name>
+    <Description>Public or protected instance fields limit your ability to change the implementation details for those data items.</Description>
+    <LongDescription>Use properties instead. They do not compromise usability or performance and they do provide flexibility in that they conceal the  implementation details of the underlying data.</LongDescription>
+    <GroupOwner>MS FxCopDev</GroupOwner>
+    <DevOwner />
+    <Url>http://www.gotdotnet.com/team/fxcop/docs/rules/DesignRules/TypesDoNotHavePublicInstanceFields.html</Url>
+    <Email>askfxcop@microsoft.com</Email>
+    <MessageLevel Certainty="90">Error</MessageLevel>
+    <File Name="DesignRules.dll" Version="1.30.0.0" />
+   </Rule>
+  </Rules>
+ </FxCopReport>
+</FxCopProject>
