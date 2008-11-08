@@ -1,0 +1,226 @@
+<?xml version="1.0"?>
+<Knack version="0.4.1792.36556">
+  <SoundBlocks>
+    <SoundBlock class="H3.Sound.RandomMidiRender" name="RandomMidi">
+      <Location x="294" y="21" />
+      <Settings>
+        <NoteMin>50</NoteMin>
+        <NoteMax>110</NoteMax>
+        <WaitMin>0.1</WaitMin>
+        <WaitMax>0.3</WaitMax>
+        <VelocityMin>0.1</VelocityMin>
+        <VelocityMax>1</VelocityMax>
+        <NoteOnProbability>1</NoteOnProbability>
+        <NoteOffProbability>1</NoteOffProbability>
+        <ConcurrentNotesMax>1</ConcurrentNotesMax>
+      </Settings>
+    </SoundBlock>
+    <SoundBlock class="H3.Sound.MidiFilterRender" name="MidiFilterA">
+      <Location x="105" y="126" />
+      <MidiInputs>
+        <Input id="0" name="RandomMidi" />
+      </MidiInputs>
+      <Settings>
+        <NoteMin>0</NoteMin>
+        <NoteMax>80</NoteMax>
+        <VelocityMin>0.01</VelocityMin>
+        <VelocityMax>1</VelocityMax>
+      </Settings>
+    </SoundBlock>
+    <SoundBlock class="H3.Sound.MidiFilterRender" name="MidiFilterB">
+      <Location x="504" y="126" />
+      <MidiInputs>
+        <Input id="0" name="RandomMidi" />
+      </MidiInputs>
+      <Settings>
+        <NoteMin>80</NoteMin>
+        <NoteMax>200</NoteMax>
+        <VelocityMin>0.01</VelocityMin>
+        <VelocityMax>1</VelocityMax>
+      </Settings>
+    </SoundBlock>
+    <SoundBlock class="H3.Sound.SawtoothSoundRender" name="SawtoothA">
+      <Location x="21" y="483" />
+      <MidiInputs>
+        <Input id="0" name="MidiFilterA" />
+      </MidiInputs>
+      <Settings>
+        <Frequency>2637.0204553029589</Frequency>
+        <OctaveScaling>0</OctaveScaling>
+        <ToneScaling>0</ToneScaling>
+        <FrequencyScaling>0</FrequencyScaling>
+      </Settings>
+    </SoundBlock>
+    <SoundBlock class="H3.Sound.TriangleSoundRender" name="TriangleA">
+      <Location x="105" y="399" />
+      <MidiInputs>
+        <Input id="0" name="MidiFilterA" />
+      </MidiInputs>
+      <Settings>
+        <Frequency>5274.0409106059215</Frequency>
+        <OctaveScaling>1</OctaveScaling>
+        <ToneScaling>0</ToneScaling>
+        <FrequencyScaling>0</FrequencyScaling>
+      </Settings>
+    </SoundBlock>
+    <SoundBlock class="H3.Sound.SineSoundRender" name="SineA">
+      <Location x="189" y="315" />
+      <MidiInputs>
+        <Input id="0" name="MidiFilterA" />
+      </MidiInputs>
+      <Settings>
+        <Frequency>1318.5102276514795</Frequency>
+        <OctaveScaling>-1</OctaveScaling>
+        <ToneScaling>0</ToneScaling>
+        <FrequencyScaling>0</FrequencyScaling>
+      </Settings>
+    </SoundBlock>
+    <SoundBlock class="H3.Sound.SoundOutRender" name="SoundOut">
+      <Location x="756" y="315" />
+      <SoundInputs>
+        <Input id="0" name="AddInstruments" />
+      </SoundInputs>
+    </SoundBlock>
+    <SoundBlock class="H3.Sound.AddOperatorSoundRender" name="AddA1A2A3">
+      <Location x="483" y="399" />
+      <SoundInputs>
+        <Input id="0" name="AddA1A2" />
+        <Input id="1" name="DelayA3" />
+      </SoundInputs>
+    </SoundBlock>
+    <SoundBlock class="H3.Sound.AddOperatorSoundRender" name="AddA1A2">
+      <Location x="378" y="357" />
+      <SoundInputs>
+        <Input id="0" name="DelayA1" />
+        <Input id="1" name="DelayA2" />
+      </SoundInputs>
+    </SoundBlock>
+    <SoundBlock class="H3.Sound.DelayEffectSoundRender" name="DelayA2">
+      <Location x="273" y="399" />
+      <SoundInputs>
+        <Input id="0" name="TriangleA" />
+      </SoundInputs>
+      <Settings>
+        <BufferSize>44100</BufferSize>
+        <Dry>0.7</Dry>
+        <Wet>0.3</Wet>
+        <Pan>0.4</Pan>
+        <Feedback>3</Feedback>
+        <Period>0.12498866</Period>
+      </Settings>
+    </SoundBlock>
+    <SoundBlock class="H3.Sound.DelayEffectSoundRender" name="DelayA">
+      <Location x="567" y="399" />
+      <SoundInputs>
+        <Input id="0" name="AddA1A2A3" />
+      </SoundInputs>
+      <Settings>
+        <BufferSize>44100</BufferSize>
+        <Dry>0.3</Dry>
+        <Wet>0.3</Wet>
+        <Pan>0.4</Pan>
+        <Feedback>0.5</Feedback>
+        <Period>0.5</Period>
+      </Settings>
+    </SoundBlock>
+    <SoundBlock class="H3.Sound.DelayEffectSoundRender" name="DelayA1">
+      <Location x="273" y="315" />
+      <SoundInputs>
+        <Input id="0" name="SineA" />
+      </SoundInputs>
+      <Settings>
+        <BufferSize>44100</BufferSize>
+        <Dry>0.8</Dry>
+        <Wet>0.5</Wet>
+        <Pan>0.6</Pan>
+        <Feedback>0</Feedback>
+        <Period>0.2</Period>
+      </Settings>
+    </SoundBlock>
+    <SoundBlock class="H3.Sound.DelayEffectSoundRender" name="DelayA3">
+      <Location x="273" y="483" />
+      <SoundInputs>
+        <Input id="0" name="SawtoothA" />
+      </SoundInputs>
+      <Settings>
+        <BufferSize>44100</BufferSize>
+        <Dry>1</Dry>
+        <Wet>0.3</Wet>
+        <Pan>0.5</Pan>
+        <Feedback>0.5</Feedback>
+        <Period>0.3</Period>
+      </Settings>
+    </SoundBlock>
+    <SoundBlock class="H3.Sound.SquareSoundRender" name="SquareB">
+      <Location x="252" y="126" />
+      <Settings>
+        <Frequency>440</Frequency>
+        <OctaveScaling>-2</OctaveScaling>
+        <ToneScaling>0</ToneScaling>
+        <FrequencyScaling>-1</FrequencyScaling>
+      </Settings>
+    </SoundBlock>
+    <SoundBlock class="H3.Sound.AdsrSoundRender" name="AdsrB">
+      <Location x="420" y="210" />
+      <SoundInputs>
+        <Input id="0" name="MultiplyOpB" />
+      </SoundInputs>
+      <Settings>
+        <AdsrCurrentStatus>PreDelay</AdsrCurrentStatus>
+        <Velocity>1</Velocity>
+        <PreDelay>0</PreDelay>
+        <Attack>0.01</Attack>
+        <Decay>0.05</Decay>
+        <Sustain>0.8</Sustain>
+        <Release>0.5</Release>
+        <Pan>0.5</Pan>
+      </Settings>
+    </SoundBlock>
+    <SoundBlock class="H3.Sound.InstrumentSoundRender" name="InstrumentB">
+      <Location x="504" y="210" />
+      <MidiInputs>
+        <Input id="0" name="MidiFilterB" />
+      </MidiInputs>
+      <SoundInputs>
+        <Input id="0" name="AdsrB" />
+      </SoundInputs>
+    </SoundBlock>
+    <SoundBlock class="H3.Sound.AddOperatorSoundRender" name="AddInstruments">
+      <Location x="672" y="315" />
+      <SoundInputs>
+        <Input id="0" name="DelayB" />
+        <Input id="1" name="DelayA" />
+      </SoundInputs>
+    </SoundBlock>
+    <SoundBlock class="H3.Sound.TriangleSoundRender" name="TriangleB">
+      <Location x="252" y="210" />
+      <Settings>
+        <Frequency>440</Frequency>
+        <OctaveScaling>-2</OctaveScaling>
+        <ToneScaling>0</ToneScaling>
+        <FrequencyScaling>1</FrequencyScaling>
+      </Settings>
+    </SoundBlock>
+    <SoundBlock class="H3.Sound.MultiplyOperatorSoundRender" name="MultiplyOpB">
+      <Location x="336" y="168" />
+      <SoundInputs>
+        <Input id="0" name="SquareB" />
+        <Input id="1" name="TriangleB" />
+      </SoundInputs>
+    </SoundBlock>
+    <SoundBlock class="H3.Sound.DelayEffectSoundRender" name="DelayB">
+      <Location x="588" y="210" />
+      <SoundInputs>
+        <Input id="0" name="InstrumentB" />
+      </SoundInputs>
+      <Settings>
+        <BufferSize>44100</BufferSize>
+        <Dry>1.5</Dry>
+        <Wet>0.8</Wet>
+        <Pan>0.8</Pan>
+        <Feedback>0</Feedback>
+        <Period>0.5</Period>
+      </Settings>
+    </SoundBlock>
+  </SoundBlocks>
+</Knack>

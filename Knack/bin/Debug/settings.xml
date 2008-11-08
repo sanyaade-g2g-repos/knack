@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Settings>
+	<!-- If you edit these settings you have to reload Knack -->
+	<Output>
+		<Sound>
+			<General>
+				<SamplesPerSecond>44100</SamplesPerSecond>
+				<BitsPerSample>16</BitsPerSample>
+				<Channels>2</Channels>
+			</General>
+			<DirectSound>
+				<!-- Tweak these settings to get lower latency -->
+				<BufferSamples>800</BufferSamples>
+				<Buffers>8</Buffers>
+				<ThreadSleepTime>5</ThreadSleepTime>
+			</DirectSound>
+		</Sound>
+	</Output>
+</Settings>
