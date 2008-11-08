@@ -1,4 +1,4 @@
-#summary Things to do for software developers.
+#summary Things to do for software developers
 
 = Things to do for software developers =
 
